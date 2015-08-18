@@ -5,4 +5,21 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- common custom item -->
+    <style name="CommonCustomTheme">
+        <!--  color for status bar -->
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <!--  color for action bar -->
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <!--  color for component, like EditText, CheckBox etc. -->
+        <item name="colorAccent">@android:color/holo_blue_bright</item>
+
+        <!-- no action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- full screen -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
 </resources>
