@@ -3,6 +3,14 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+
+        <!--  color for status bar -->
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <!--  color for action bar -->
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <!--  color for component, like EditText, CheckBox etc. -->
+        <item name="colorAccent">@android:color/holo_blue_bright</item>
+
     </style>
 
 </resources>
