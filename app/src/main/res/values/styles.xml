@@ -1,7 +1,19 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Base application AppCompat theme. -->
+
+    <!-- AppCompat theme for dark -->
+    <style name="AppCompatDarkTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- AppCompat theme for light -->
+    <style name="AppCompatLightTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- AppCompat theme for light with a dark action bar -->
+    <style name="AppCompatLightWithDarkActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
 
