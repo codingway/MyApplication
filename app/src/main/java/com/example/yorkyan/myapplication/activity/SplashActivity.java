@@ -1,10 +1,12 @@
-package com.example.yorkyan.myapplication;
+package com.example.yorkyan.myapplication.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+
+import com.example.yorkyan.myapplication.R;
 
 public class SplashActivity extends BaseActivity {
     public static final String START_PREFERENCE = "start_preference";

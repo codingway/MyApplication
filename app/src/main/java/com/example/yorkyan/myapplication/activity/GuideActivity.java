@@ -1,4 +1,4 @@
-package com.example.yorkyan.myapplication;
+package com.example.yorkyan.myapplication.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.example.yorkyan.myapplication.R;
 
 import java.util.ArrayList;
 import java.util.List;
