@@ -1,25 +1,24 @@
 <resources>
 
     <!-- Base application AppCompat theme. -->
-
-    <style name="AppTheme" parent="Theme.AppCompat">
-        <!-- Customize your theme here. -->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <!-- full screen -->
+        <item name="android:windowFullscreen">true</item>
     </style>
+
+    <style name="AppTheme" parent="AppCompatLightNoActionBarTheme" />
 
     <!-- AppCompat theme for dark -->
-    <style name="AppCompatDarkTheme" parent="Theme.AppCompat">
-        <!-- Customize your theme here. -->
-    </style>
+    <style name="AppCompatDarkTheme" parent="Theme.AppCompat" />
 
     <!-- AppCompat theme for light -->
-    <style name="AppCompatLightTheme" parent="Theme.AppCompat.Light">
-        <!-- Customize your theme here. -->
-    </style>
+    <style name="AppCompatLightTheme" parent="Theme.AppCompat.Light" />
+
+    <!-- AppCompat theme for light -->
+    <style name="AppCompatLightNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
 
     <!-- AppCompat theme for light with a dark action bar -->
-    <style name="AppCompatLightWithDarkActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-    </style>
+    <style name="AppCompatLightWithDarkActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
 
     <!-- common custom item -->
     <style name="CommonCustomTheme">
