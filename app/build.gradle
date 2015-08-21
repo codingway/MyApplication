@@ -18,10 +18,6 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
-
     productFlavors {
         xiaomi {}
         _360 {}
