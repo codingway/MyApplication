@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.example.yorkyan.myapplication.application.BaseApplication;
+import com.umeng.analytics.MobclickAgent;
 
 public class BaseActivity extends AppCompatActivity{
     public String TAG;
@@ -19,6 +20,20 @@ public class BaseActivity extends AppCompatActivity{
 
         // set orientation to portrait
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // umeng resume
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // umeng pause
+        MobclickAgent.onPause(this);
     }
 
     public RequestQueue getRequestQueue() {
