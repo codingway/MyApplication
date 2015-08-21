@@ -4,9 +4,19 @@
     <style name="FullScreenTheme" parent="AppTheme">
         <!-- full screen -->
         <item name="android:windowFullscreen">true</item>
+        <!-- no action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme" parent="AppCompatLightNoActionBarTheme" />
+    <style name="AppTheme" parent="AppCompatLightTheme">
+        <!--  color for status bar -->
+        <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
+        <!--  color for action bar -->
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <!--  color for component, like EditText, CheckBox etc. -->
+        <item name="colorAccent">@android:color/holo_blue_bright</item>
+    </style>
 
     <!-- AppCompat theme for dark -->
     <style name="AppCompatDarkTheme" parent="Theme.AppCompat" />

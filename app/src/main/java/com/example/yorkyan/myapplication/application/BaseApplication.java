@@ -30,15 +30,6 @@ import javax.net.ssl.TrustManagerFactory;
 public class BaseApplication extends Application{
     private RequestQueue requestQueue;
     private ImageLoader imageLoader;
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        // init request queue
-        requestQueue = getRequestQueue();
-        // init imageLoader
-        imageLoader = getImageLoader();
-    }
 
     public ImageLoader getImageLoader() {
         if (imageLoader == null) {
