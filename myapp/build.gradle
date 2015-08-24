@@ -38,10 +38,9 @@ android {
 
     buildTypes {
         release {
+            minifyEnabled false
             zipAlignEnabled true
             shrinkResources true
-
-            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
 
@@ -49,7 +48,7 @@ android {
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
-                        output.outputFile = new File("D:/Version${defaultConfig.versionName}-${releaseTime()}/${variant.productFlavors[0].name}/", outputFile.name)
+                        output.outputFile = new File("D:/Version${defaultConfig.versionName}-${releaseTime()}/", outputFile.name)
                     }
                 }
             }
