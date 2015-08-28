@@ -3,14 +3,17 @@ package com.example.yorkyan.myapplication.activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.example.yorkyan.myapplication.application.BaseApplication;
 import com.umeng.analytics.MobclickAgent;
 
-public class BaseActivity extends AppCompatActivity{
+public class BaseActivity extends AppCompatActivity {
     public String TAG;
+    private Toast toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,33 @@ public class BaseActivity extends AppCompatActivity{
         return ((BaseApplication) getApplication()).getRequestQueue();
     }
 
-    public ImageLoader getImageLoader () {
+    public ImageLoader getImageLoader() {
         return ((BaseApplication) getApplication()).getImageLoader();
+    }
+
+    public void show(String text) {
+        show(text, Toast.LENGTH_SHORT);
+    }
+
+    public void show(String text, int duration) {
+        // default Gravity value is 81
+        show(text, duration, 81);
+    }
+
+    public void show(String text, int duration, int gravity) {
+        if (toast == null) {
+            toast = Toast.makeText(this, text, duration);
+        } else {
+            if (toast.getGravity() != gravity) {
+                toast.cancel();
+                toast = Toast.makeText(this, text, duration);
+                toast.setGravity(gravity, 0, 0);
+            } else {
+                toast.setText(text);
+                toast.setDuration(duration);
+            }
+        }
+
+        toast.show();
     }
 }
