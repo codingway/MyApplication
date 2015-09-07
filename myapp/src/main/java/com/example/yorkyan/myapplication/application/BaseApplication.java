@@ -102,7 +102,7 @@ public class BaseApplication extends Application{
     class HostNameVerifier implements HostnameVerifier {
         @Override
         public boolean verify(String hostname, SSLSession session) {
-            return hostname.equals(getString(R.string.host));
+            return hostname.equals("107.180.21.15");
         }
     }
 }
