@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapp/myapp.iml" filepath="$PROJECT_DIR$/myapp/myapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parentactivity/parentactivity.iml" filepath="$PROJECT_DIR$/parentactivity/parentactivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/swipeview/swipeview.iml" filepath="$PROJECT_DIR$/swipeview/swipeview.iml" />
     </modules>
   </component>
