@@ -1,1 +1,1 @@
-include ':swipeview', ':myapp', ':mylibrary', ':parentactivity'
+include ':swipeview', ':myapp', ':mylibrary', ':parentactivity', ':notification'
