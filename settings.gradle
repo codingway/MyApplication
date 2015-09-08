@@ -1,1 +1,1 @@
-include ':myapp', ':mylibrary', ':helloworld', ':volleytest', ':swipeview'
+include ':swipeview', ':myapp', ':mylibrary'

@@ -10,11 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/helloworld" />
             <option value="$PROJECT_DIR$/myapp" />
             <option value="$PROJECT_DIR$/mylibrary" />
             <option value="$PROJECT_DIR$/swipeview" />
-            <option value="$PROJECT_DIR$/volleytest" />
           </set>
         </option>
       </GradleProjectSettings>
