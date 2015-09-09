@@ -1,1 +1,1 @@
-include ':swipeview', ':myapp', ':mylibrary', ':parentactivity', ':notification', ':swiperefreshlayout'
+include ':swipeview', ':myapp', ':mylibrary', ':parentactivity', ':notification', ':swiperefreshlayout', ':customlistview'
