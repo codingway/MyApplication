@@ -1,0 +1,15 @@
+<cn.uwaytech.gesture.CustomViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.uwaytech.gesture.CustomView
+        android:id="@+id/test_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_light" />
+
+</cn.uwaytech.gesture.CustomViewGroup>
