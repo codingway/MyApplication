@@ -1,15 +1,7 @@
 <resources>
 
     <!-- Base application AppCompat theme. -->
-    <style name="FullScreenTheme" parent="AppTheme">
-        <!-- full screen -->
-        <item name="android:windowFullscreen">true</item>
-        <!-- no action bar -->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme" parent="AppCompatLightTheme">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--  color for status bar -->
         <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
         <!--  color for action bar -->
@@ -18,17 +10,21 @@
         <item name="colorAccent">@android:color/holo_blue_bright</item>
     </style>
 
-    <!-- AppCompat theme for dark -->
-    <style name="AppCompatDarkTheme" parent="Theme.AppCompat" />
+    <!-- no action bar theme -->
+    <style name="NoActionBarTheme" parent="AppTheme">
+        <!-- no action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
-    <!-- AppCompat theme for light -->
-    <style name="AppCompatLightTheme" parent="Theme.AppCompat.Light" />
-
-    <!-- AppCompat theme for light -->
-    <style name="AppCompatLightNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
-
-    <!-- AppCompat theme for light with a dark action bar -->
-    <style name="AppCompatLightWithDarkActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <!-- full screen theme -->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <!-- full screen -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- no action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
     <!-- common custom item -->
     <style name="CommonCustomTheme">
