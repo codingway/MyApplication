@@ -2,6 +2,7 @@ package com.example.yorkyan.myapplication.activity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
@@ -18,7 +19,7 @@ public class MainActivity extends BaseActivity {
         if (NetWorkUtil.isConn(this)) {
             if (NetWorkUtil.isWifiConn(this)) {
                 Log.d(TAG, "is wifi connected");
-            } else if(NetWorkUtil.isMobileConn(this)) {
+            } else if (NetWorkUtil.isMobileConn(this)) {
                 Log.d(TAG, "is mobile connected");
             }
         }
@@ -29,5 +30,17 @@ public class MainActivity extends BaseActivity {
                 Log.d(TAG, response);
             }
         }, new VolleyErrorListener(TAG)));
+    }
+
+    public void dimStatusAndNaviagationBars() {
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_LOW_PROFILE;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
+
+    public void unDimStatusAndNaviagationBars() {
+        View decorView = getWindow().getDecorView();
+        // Calling setSystemUiVisibility() with a value of 0 clears all flags.
+        decorView.setSystemUiVisibility(0);
     }
 }

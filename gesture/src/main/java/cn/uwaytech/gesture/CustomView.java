@@ -38,7 +38,7 @@ public class CustomView extends View implements GestureDetector.OnGestureListene
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        super.onTouchEvent(event)
+        super.onTouchEvent(event);
         Log.d(TAG, "onTouchEvent");
         gestureDetector.onTouchEvent(event);
 
