@@ -27,7 +27,7 @@ public class PhoneUtil {
     //
     //    电信：133、153、180、189、（1349卫星）
     public static boolean isMobileNumber(String mobile) {
-        Pattern pattern = Pattern.compile("^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$");
+        Pattern pattern = Pattern.compile("^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))|(177)\\d{8}$");
         Matcher matcher = pattern.matcher(mobile);
         return matcher.matches();
     }
