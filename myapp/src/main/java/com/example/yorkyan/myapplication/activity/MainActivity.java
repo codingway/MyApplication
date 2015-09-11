@@ -2,7 +2,6 @@ package com.example.yorkyan.myapplication.activity;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -35,22 +34,28 @@ public class MainActivity extends BaseActivity {
         }, new VolleyErrorListener(TAG)));
     }
 
-    public void dimStatusAndNaviagationBars() {
-        View decorView = getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_LOW_PROFILE;
-        decorView.setSystemUiVisibility(uiOptions);
+    public int getStatusBarHeight() {
+        int result = 0;
+        int resourceId = getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
     }
 
-    public void unDimStatusAndNaviagationBars() {
-        View decorView = getWindow().getDecorView();
-        // Calling setSystemUiVisibility() with a value of 0 clears all flags.
-        decorView.setSystemUiVisibility(0);
+    public void hideActionBar() {
+        if (getActionBar() != null) {
+            getActionBar().hide();
+        } else if (getSupportActionBar() != null) {
+            // for compat support theme
+            getSupportActionBar().hide();
+        }
     }
 
     /**
-     * should be called before setContentView() method
+     * should be called onResume method
      */
-    public void setFullScreen() {
+    public void hideStatusBar() {
         // If the Android version is lower than Jellybean, use this call to hide
         // the status bar.
         if (Build.VERSION.SDK_INT < 16) {
@@ -61,14 +66,21 @@ public class MainActivity extends BaseActivity {
             // Hide the status bar.
             int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
             decorView.setSystemUiVisibility(uiOptions);
-
             // Remember that you should never show the action bar if the
             // status bar is hidden, so hide that too if necessary.
-            // because the theme is compat so we should getSupportActionBar() but getActionBar()
-            ActionBar actionBar = getSupportActionBar();
-            if (actionBar != null) {
-                actionBar.hide();
-            }
+            hideActionBar();
         }
+    }
+
+    public void dimStatusAndNaviagationBars() {
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_LOW_PROFILE;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
+
+    public void unDimStatusAndNaviagationBars() {
+        View decorView = getWindow().getDecorView();
+        // Calling setSystemUiVisibility() with a value of 0 clears all flags.
+        decorView.setSystemUiVisibility(0);
     }
 }

@@ -1,7 +1,10 @@
 <resources>
 
     <!-- Base application AppCompat theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="BaseTheme" />
+
+    <!-- Base theme -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!--  color for status bar -->
         <item name="colorPrimaryDark">@android:color/holo_blue_dark</item>
         <!--  color for action bar -->
@@ -11,14 +14,14 @@
     </style>
 
     <!-- no action bar theme -->
-    <style name="NoActionBarTheme" parent="AppTheme">
+    <style name="NoActionBarTheme" parent="BaseTheme">
         <!-- no action bar -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
     <!-- full screen theme -->
-    <style name="FullScreenTheme" parent="AppTheme">
+    <style name="FullScreenTheme" parent="BaseTheme">
         <!-- full screen -->
         <item name="android:windowFullscreen">true</item>
         <!-- no action bar -->
@@ -34,6 +37,17 @@
         <item name="colorPrimary">@android:color/holo_blue_light</item>
         <!--  color for component, like EditText, CheckBox etc. -->
         <item name="colorAccent">@android:color/holo_blue_bright</item>
+
+        <!-- only support for api 19 -->
+        <!-- translucent for status bar -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- translucent for navigation -->
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- overlay mode -->
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
 
         <!-- no action bar -->
         <item name="windowActionBar">false</item>

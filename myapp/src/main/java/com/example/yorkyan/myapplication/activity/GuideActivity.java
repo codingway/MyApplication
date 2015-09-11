@@ -60,6 +60,7 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
 
         Intent intent = new Intent(GuideActivity.this, MainActivity.class);
         startActivity(intent);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         finish();
     }
 
