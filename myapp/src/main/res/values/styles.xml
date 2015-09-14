@@ -17,16 +17,16 @@
     <style name="NoActionBarTheme" parent="BaseTheme">
         <!-- no action bar -->
         <item name="windowActionBar">false</item>
+        <!-- window no title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Support library compatibility -->
         <item name="windowNoTitle">true</item>
     </style>
 
     <!-- full screen theme -->
-    <style name="FullScreenTheme" parent="BaseTheme">
+    <style name="FullScreenTheme" parent="NoActionBarTheme">
         <!-- full screen -->
         <item name="android:windowFullscreen">true</item>
-        <!-- no action bar -->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
 
     <!-- common custom item -->
@@ -51,6 +51,9 @@
 
         <!-- no action bar -->
         <item name="windowActionBar">false</item>
+        <!-- window no title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Support library compatibility -->
         <item name="windowNoTitle">true</item>
 
         <!-- full screen -->

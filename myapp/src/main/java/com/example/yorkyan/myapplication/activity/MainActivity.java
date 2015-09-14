@@ -1,16 +1,13 @@
 package com.example.yorkyan.myapplication.activity;
 
+import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.android.volley.Response;
-import com.android.volley.toolbox.StringRequest;
 import com.example.yorkyan.myapplication.R;
-import com.example.yorkyan.myapplication.util.NetWorkUtil;
-import com.example.yorkyan.myapplication.volley.VolleyErrorListener;
 
 public class MainActivity extends BaseActivity {
     @Override
@@ -18,20 +15,39 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (NetWorkUtil.isConn(this)) {
-            if (NetWorkUtil.isWifiConn(this)) {
-                Log.d(TAG, "is wifi connected");
-            } else if (NetWorkUtil.isMobileConn(this)) {
-                Log.d(TAG, "is mobile connected");
-            }
+        init();
+    }
+
+    public void init() {
+        initWindow();
+        initToolBar();
+    }
+
+    @TargetApi(19)
+    public void initWindow() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            // translucent for status
+             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            // translucent for navigation
+            // getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
+    }
+
+    public void initToolBar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            // disable title
+            // getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+            // enable back up, set parent activity to make it work.
+            // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        getRequestQueue().add(new StringRequest("http://www.baidu.com/", new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d(TAG, response);
-            }
-        }, new VolleyErrorListener(TAG)));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            // set padding for adjust ui
+            toolbar.setPadding(0, getStatusBarHeight(), 0, 0);
+        }
     }
 
     public int getStatusBarHeight() {

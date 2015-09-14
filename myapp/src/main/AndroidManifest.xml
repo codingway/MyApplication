@@ -24,8 +24,7 @@
         <activity
             android:name=".activity.GuideActivity"
             android:theme="@style/FullScreenTheme" />
-        <activity android:name=".activity.MainActivity"
-            android:launchMode="singleInstance"/>
+        <activity android:name=".activity.MainActivity" />
 
         <!-- meta data for umeng -->
         <meta-data
