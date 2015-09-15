@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:Theme.Material.Light">
+
+    <style name="AppTheme" parent="LightTheme">
+        <!--   color for status bar -->
+        <item name="android:statusBarColor">@android:color/holo_blue_light</item>
+        <!--   color for action bar -->
+        <item name="android:colorPrimary">@android:color/holo_blue_light</item>
+        <!--  color for components, like EditText, CheckBox etc. -->
+        <item name="android:colorAccent">@android:color/holo_blue_light</item>
     </style>
+
+    <!-- dark theme -->
+    <style name="DarkTheme" parent="@android:style/Theme.Material" />
+
+    <!-- light theme -->
+    <style name="LightTheme" parent="@android:style/Theme.Material.Light" />
+
 </resources>
