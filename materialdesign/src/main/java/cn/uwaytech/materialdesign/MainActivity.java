@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 
         final Handler handler = new Handler();
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         // use this setting to improve performance if you know that changes
         // in content do not change the layout size of the RecyclerView
         recyclerView.setHasFixedSize(true);
@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
                     public void run() {
                         integers.add(0, count++);
                         recyclerViewAdapter.notifyItemInserted(0);
+                        recyclerView.scrollToPosition(0);
                         swipeRefreshLayout.setRefreshing(false);
                     }
                 }, 1000);
