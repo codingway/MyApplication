@@ -22,14 +22,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public RecyclerViewHolder(View itemView) {
             super(itemView);
 
-            textView = (TextView) itemView.findViewById(android.R.id.text1);
+            textView = (TextView) itemView.findViewById(R.id.info_text);
         }
     }
 
     @Override
     public RecyclerViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         // create a new view
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(android.R.layout.simple_list_item_1, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card_view, viewGroup, false);
         // set the view's size, margin, padding and layout parameters
         // ...
 
