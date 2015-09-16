@@ -15,3 +15,28 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+# keep volley
+-keep class com.android.volley.** {*;}
+-keep interface com.android.volley.** {*;}
+-dontwarn com.android.volley.**
+
+# keep apache
+-keep class org.apache.http.** {*;}
+-keep interface org.apache.http.** {*;}
+-dontwarn org.apache.http.**
+
+# remove log
+-assumenosideeffects class android.util.Log{
+    public static int v(...);
+    public static int i(...);
+    public static int d(...);
+    public static int w(...);
+    public static int e(...);
+}
+
+# remove println
+-assumenosideeffects class java.io.PrintStream{
+    public void println(%);
+    public void println(**);
+}
