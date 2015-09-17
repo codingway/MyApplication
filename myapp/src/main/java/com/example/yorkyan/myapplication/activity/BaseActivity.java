@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
+import com.example.yorkyan.myapplication.BuildConfig;
 import com.example.yorkyan.myapplication.application.BaseApplication;
 import com.umeng.analytics.MobclickAgent;
 
@@ -29,14 +30,18 @@ public class BaseActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         // umeng resume
-        MobclickAgent.onResume(this);
+        if (!BuildConfig.DEBUG) {
+            MobclickAgent.onResume(this);
+        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         // umeng pause
-        MobclickAgent.onPause(this);
+        if (!BuildConfig.DEBUG) {
+            MobclickAgent.onPause(this);
+        }
     }
 
     public RequestQueue getRequestQueue() {
