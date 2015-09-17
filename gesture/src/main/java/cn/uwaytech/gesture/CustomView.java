@@ -7,7 +7,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class CustomView extends View implements GestureDetector.OnGestureListener {
+public class CustomView extends View implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
     public static final String TAG = "CustomView";
     private GestureDetector gestureDetector;
 
@@ -81,6 +81,24 @@ public class CustomView extends View implements GestureDetector.OnGestureListene
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
         Log.d(TAG, "onFling");
+        return false;
+    }
+
+    @Override
+    public boolean onSingleTapConfirmed(MotionEvent e) {
+        Log.d(TAG, "onSingleTapConfirmed");
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTap(MotionEvent e) {
+        Log.d(TAG, "onDoubleTap");
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTapEvent(MotionEvent e) {
+        Log.d(TAG, "onDoubleTapEvent");
         return false;
     }
 }
