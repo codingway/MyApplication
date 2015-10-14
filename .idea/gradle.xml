@@ -14,14 +14,14 @@
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/dispatchtouchevent" />
             <option value="$PROJECT_DIR$/gesture" />
-            <option value="$PROJECT_DIR$/materialdesign" />
             <option value="$PROJECT_DIR$/myapp" />
             <option value="$PROJECT_DIR$/mylibrary" />
             <option value="$PROJECT_DIR$/notification" />
             <option value="$PROJECT_DIR$/parentactivity" />
+            <option value="$PROJECT_DIR$/recyclerview" />
             <option value="$PROJECT_DIR$/screensmartsupport" />
             <option value="$PROJECT_DIR$/swiperefreshlayout" />
-            <option value="$PROJECT_DIR$/swipeview" />
+            <option value="$PROJECT_DIR$/viewpager" />
           </set>
         </option>
       </GradleProjectSettings>

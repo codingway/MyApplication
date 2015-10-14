@@ -1,1 +1,1 @@
-include ':swipeview', ':myapp', ':mylibrary', ':parentactivity', ':notification', ':swiperefreshlayout', ':customlistview', ':screensmartsupport', ':customview', ':dispatchtouchevent', ':gesture', ':materialdesign'
+include ':viewpager', ':myapp', ':mylibrary', ':parentactivity', ':notification', ':swiperefreshlayout', ':customlistview', ':screensmartsupport', ':customview', ':dispatchtouchevent', ':gesture', 'recyclerview'

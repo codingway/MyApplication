@@ -7,14 +7,14 @@
       <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
       <module fileurl="file://$PROJECT_DIR$/dispatchtouchevent/dispatchtouchevent.iml" filepath="$PROJECT_DIR$/dispatchtouchevent/dispatchtouchevent.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesture/gesture.iml" filepath="$PROJECT_DIR$/gesture/gesture.iml" />
-      <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapp/myapp.iml" filepath="$PROJECT_DIR$/myapp/myapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/notification/notification.iml" filepath="$PROJECT_DIR$/notification/notification.iml" />
       <module fileurl="file://$PROJECT_DIR$/parentactivity/parentactivity.iml" filepath="$PROJECT_DIR$/parentactivity/parentactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/screensmartsupport/screensmartsupport.iml" filepath="$PROJECT_DIR$/screensmartsupport/screensmartsupport.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayout/swiperefreshlayout.iml" filepath="$PROJECT_DIR$/swiperefreshlayout/swiperefreshlayout.iml" />
-      <module fileurl="file://$PROJECT_DIR$/swipeview/swipeview.iml" filepath="$PROJECT_DIR$/swipeview/swipeview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager/viewpager.iml" filepath="$PROJECT_DIR$/viewpager/viewpager.iml" />
     </modules>
   </component>
 </project>
