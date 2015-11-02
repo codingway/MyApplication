@@ -3,9 +3,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:\Android Studio\gradle\gradle-2.4" />
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
@@ -14,6 +13,8 @@
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/dispatchtouchevent" />
             <option value="$PROJECT_DIR$/gesture" />
+            <option value="$PROJECT_DIR$/launchmodea" />
+            <option value="$PROJECT_DIR$/launchmodeb" />
             <option value="$PROJECT_DIR$/myapp" />
             <option value="$PROJECT_DIR$/mylibrary" />
             <option value="$PROJECT_DIR$/notification" />

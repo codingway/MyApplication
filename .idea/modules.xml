@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
       <module fileurl="file://$PROJECT_DIR$/dispatchtouchevent/dispatchtouchevent.iml" filepath="$PROJECT_DIR$/dispatchtouchevent/dispatchtouchevent.iml" />
       <module fileurl="file://$PROJECT_DIR$/gesture/gesture.iml" filepath="$PROJECT_DIR$/gesture/gesture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/launchmodea/launchmodea.iml" filepath="$PROJECT_DIR$/launchmodea/launchmodea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/launchmodeb/launchmodeb.iml" filepath="$PROJECT_DIR$/launchmodeb/launchmodeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapp/myapp.iml" filepath="$PROJECT_DIR$/myapp/myapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/notification/notification.iml" filepath="$PROJECT_DIR$/notification/notification.iml" />
